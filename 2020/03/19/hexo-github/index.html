@@ -91,7 +91,7 @@ function activateLightMode(){
 <h3 id="安装hexo"><a href="#安装hexo" class="headerlink" title="安装hexo"></a>安装hexo</h3><p>官网提供的安装指令为：  </p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-cli -g</span><br></pre></td></tr></table></figure>
 
-<p>但经过尝试，该指令无法正常安装hexo，可使用以下命令安装：  </p>
+<p>若该指令无法正常安装hexo，可使用以下命令安装：  </p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ sudo npm install --unsafe-perm --verbose -g hexo <span class="comment"># Ubuntu  </span></span><br><span class="line">$ sudo npm install hexo-cli -g <span class="comment"># macOS</span></span><br></pre></td></tr></table></figure>
 
 <h2 id="博客配置"><a href="#博客配置" class="headerlink" title="博客配置"></a>博客配置</h2><h3 id="初始化与常用指令"><a href="#初始化与常用指令" class="headerlink" title="初始化与常用指令"></a>初始化与常用指令</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo init blog <span class="comment"># blog为博客的根目录，该文件夹必需为空</span></span><br></pre></td></tr></table></figure>
@@ -106,7 +106,8 @@ function activateLightMode(){
 <h3 id="更换主题（eg-Butterfly）"><a href="#更换主题（eg-Butterfly）" class="headerlink" title="更换主题（eg: Butterfly）"></a>更换主题（eg: Butterfly）</h3><p>执行以下命令下载主题：  </p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> /blog/themes <span class="comment"># 切换到主题目录  </span></span><br><span class="line">$ git <span class="built_in">clone</span> -b master https://github.com/jerryc127/hexo-theme-butterfly.git themes/Butterfly <span class="comment"># 克隆主题到本地,可以在github上搜索主题,替换相应链接就可以了  </span></span><br><span class="line">$ npm install hexo-renderer-pug hexo-renderer-stylus <span class="comment"># Butterfly主题所需的插件</span></span><br></pre></td></tr></table></figure>
 
-<p>修改blog目录下的 _config.yml 配置文件中的theme属性，将其设置为Butterfly(根据主题名称设定)。<br>若使用命令<code>hexo g</code>时遇见‘Cannot read property ‘meta’ of undefined’的错误，请在Butterfly主题目录下的 _config.yml 配置文件中，将‘douban’属性的所有注释取消。</p>
+<p>修改blog目录下的 _config.yml 配置文件中的theme属性，将其设置为Butterfly(根据主题名称设定)。  </p>
+<p>若使用命令<code>hexo g</code>时遇见‘Cannot read property ‘meta’ of undefined’的错误，请在Butterfly主题目录下的 _config.yml 配置文件中，将‘douban’属性的所有注释取消。</p>
 <h3 id="注册GitHub"><a href="#注册GitHub" class="headerlink" title="注册GitHub"></a>注册GitHub</h3><p><a href="www.github.com">Github官网</a>创建账户登录之后,新建一个名称为[账户名.github.io]的代码仓库。<br>注：若个人主页的网站内容是在master分支下,则可以通过 <a href="http://username.github.io" target="_blank" rel="noopener">http://username.github.io</a> 来访问你的个人主页  </p>
 <h3 id="使用hexo-deploy部署"><a href="#使用hexo-deploy部署" class="headerlink" title="使用hexo deploy部署"></a>使用<code>hexo deploy</code>部署</h3><p>如果要将代码部署到Github，需在blog根目录下的配置文件 _config.xml中作如下修改：  </p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:  </span><br><span class="line">  <span class="built_in">type</span>: git  </span><br><span class="line">  repo: git@github.com:yourname/yourname.github.io.git  </span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
