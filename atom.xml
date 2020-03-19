@@ -5,9 +5,9 @@
   
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://yoursite.com/"/>
+  <link href="http://www.wenchang1997.cn/"/>
   <updated>2020-03-19T13:09:52.000Z</updated>
-  <id>http://yoursite.com/</id>
+  <id>http://www.wenchang1997.cn/</id>
   
   <author>
     <name>Wenchang</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>hexo+github搭建博客</title>
-    <link href="http://yoursite.com/2020/03/19/hexo-github/"/>
-    <id>http://yoursite.com/2020/03/19/hexo-github/</id>
+    <link href="http://www.wenchang1997.cn/2020/03/19/hexo-github/"/>
+    <id>http://www.wenchang1997.cn/2020/03/19/hexo-github/</id>
     <published>2020-03-19T10:51:04.000Z</published>
     <updated>2020-03-19T13:09:52.000Z</updated>
     
@@ -36,12 +36,12 @@
     </summary>
     
     
-      <category term="web" scheme="http://yoursite.com/categories/web/"/>
+      <category term="web" scheme="http://www.wenchang1997.cn/categories/web/"/>
     
     
-      <category term="Hexo" scheme="http://yoursite.com/tags/Hexo/"/>
+      <category term="Hexo" scheme="http://www.wenchang1997.cn/tags/Hexo/"/>
     
-      <category term="github" scheme="http://yoursite.com/tags/github/"/>
+      <category term="github" scheme="http://www.wenchang1997.cn/tags/github/"/>
     
   </entry>
   
