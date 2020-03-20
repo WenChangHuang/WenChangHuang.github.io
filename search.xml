@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>Git 常用命令</title>
+      <link href="/2020/03/20/git-skills/"/>
+      <url>/2020/03/20/git-skills/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      <categories>
+          
+          <category> GitHub </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Git </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>hexo+github搭建博客</title>
       <link href="/2020/03/19/hexo-github/"/>
       <url>/2020/03/19/hexo-github/</url>
@@ -22,7 +47,7 @@
             
             <tag> Hexo </tag>
             
-            <tag> github </tag>
+            <tag> GitHub </tag>
             
         </tags>
       
