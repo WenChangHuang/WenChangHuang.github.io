@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>关于Python的零碎知识</title>
+      <link href="/2020/03/22/python-little-knowledge/"/>
+      <url>/2020/03/22/python-little-knowledge/</url>
+      
+        <content type="html"><![CDATA[<h3 id="os-mkdir-与-os-makedirs"><a href="#os-mkdir-与-os-makedirs" class="headerlink" title="os.mkdir() 与 os.makedirs()"></a>os.mkdir() 与 os.makedirs()</h3><h3 id="变量前加"><a href="#变量前加" class="headerlink" title="变量前加 *"></a>变量前加 *</h3><h3 id=""><a href="#" class="headerlink" title=""></a></h3>]]></content>
+      
+      
+      <categories>
+          
+          <category> Python </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Python </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Markdown 语法</title>
       <link href="/2020/03/20/markdown/"/>
       <url>/2020/03/20/markdown/</url>
