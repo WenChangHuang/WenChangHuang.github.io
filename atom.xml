@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.wenchang1997.cn/"/>
-  <updated>2020-03-23T03:19:28.000Z</updated>
+  <updated>2020-03-23T03:23:57.000Z</updated>
   <id>http://www.wenchang1997.cn/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="http://www.wenchang1997.cn/2020/03/22/python-little-knowledge/"/>
     <id>http://www.wenchang1997.cn/2020/03/22/python-little-knowledge/</id>
     <published>2020-03-22T12:51:34.000Z</published>
-    <updated>2020-03-23T03:19:28.000Z</updated>
+    <updated>2020-03-23T03:23:57.000Z</updated>
     
-    <content type="html"><![CDATA[<h3 id="os-mkdir-与-os-makedirs"><a href="#os-mkdir-与-os-makedirs" class="headerlink" title="os.mkdir() 与 os.makedirs()"></a>os.mkdir() 与 os.makedirs()</h3><pre><code>os.mkdir(path, mode=0o777, *, dir_fd=None)</code></pre><p>创建名为path的目录(只创建最后一层的目录),如果目录已经存在，则抛出异常FileExistsError。<br>mode就是所创建目录对应的文件及文件夹的读写权限; *，dir_fd=None为命名关键字参数。  </p><pre><code>os.makedirs(name, mode=0o777, exist_ok=False)</code></pre><p>递归创建目录，即路径中哪一层不存在，则自动创建。<br>name为所要创建的目录名称；参数mode传递给mkdir()；如果exist_ok是False（默认），当目标目录（即要创建的目录）已经存在，会抛出一个OSError。  </p><h3 id="在列表，元组，字典变量前加"><a href="#在列表，元组，字典变量前加" class="headerlink" title="在列表，元组，字典变量前加 *"></a>在列表，元组，字典变量前加 *</h3><p>在列表前加 *，会将列表拆分成一个一个的独立元素，不光是列表、元组、字典，由numpy生成的向量也可以拆分。即不加 *，则将整个列表当做一个元素使用；加了 *，则将列表里的每一个元素都拆分出来使用。  </p><h3 id=""><a href="#" class="headerlink" title=""></a></h3>]]></content>
+    <content type="html"><![CDATA[<h3 id="os-mkdir-与-os-makedirs"><a href="#os-mkdir-与-os-makedirs" class="headerlink" title="os.mkdir() 与 os.makedirs()"></a>os.mkdir() 与 os.makedirs()</h3><pre><code>os.mkdir(path, mode=0o777, *, dir_fd=None)</code></pre><p>创建名为path的目录(只创建最后一层的目录),如果目录已经存在，则抛出异常FileExistsError。<br>mode就是所创建目录对应的文件及文件夹的读写权限; *，dir_fd=None为命名关键字参数。  </p><pre><code>os.makedirs(name, mode=0o777, exist_ok=False)</code></pre><p>递归创建目录，即路径中哪一层不存在，则自动创建。<br>name为所要创建的目录名称；参数mode传递给mkdir()；如果exist_ok是False（默认），当目标目录（即要创建的目录）已经存在，会抛出一个OSError。  </p><h3 id="在列表，元组，字典变量前加"><a href="#在列表，元组，字典变量前加" class="headerlink" title="在列表，元组，字典变量前加 *"></a>在列表，元组，字典变量前加 *</h3><p>在列表前加 *，会将列表拆分成一个一个的独立元素，不光是列表、元组、字典，由numpy生成的向量也可以拆分。即不加 *，则将整个列表当做一个元素使用；加了 *，则将列表里的每一个元素都拆分出来使用。  </p><h3 id="函数中-args-和-kwargs"><a href="#函数中-args-和-kwargs" class="headerlink" title="函数中 args 和 *kwargs"></a>函数中 <em>args 和 *</em>kwargs</h3><pre><code>*args：接收若干个位置参数，转换成元组tuple形式  **kwargs：接收若干个关键字参数，转换成字典dict形式</code></pre>]]></content>
     
     <summary type="html">
     
