@@ -5,9 +5,9 @@
   
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://www.wenchang1997.cn/"/>
-  <updated>2020-03-23T03:25:30.000Z</updated>
-  <id>http://www.wenchang1997.cn/</id>
+  <link href="https://www.wenchang1997.cn/"/>
+  <updated>2020-03-23T03:33:11.000Z</updated>
+  <id>https://www.wenchang1997.cn/</id>
   
   <author>
     <name>Wenchang</name>
@@ -18,10 +18,10 @@
   
   <entry>
     <title>关于Python的零碎知识</title>
-    <link href="http://www.wenchang1997.cn/2020/03/22/python-little-knowledge/"/>
-    <id>http://www.wenchang1997.cn/2020/03/22/python-little-knowledge/</id>
+    <link href="https://www.wenchang1997.cn/2020/03/22/python-little-knowledge/"/>
+    <id>https://www.wenchang1997.cn/2020/03/22/python-little-knowledge/</id>
     <published>2020-03-22T12:51:34.000Z</published>
-    <updated>2020-03-23T03:25:30.000Z</updated>
+    <updated>2020-03-23T03:33:11.000Z</updated>
     
     <content type="html"><![CDATA[<h3 id="os-mkdir-与-os-makedirs"><a href="#os-mkdir-与-os-makedirs" class="headerlink" title="os.mkdir() 与 os.makedirs()"></a>os.mkdir() 与 os.makedirs()</h3><pre><code>os.mkdir(path, mode=0o777, *, dir_fd=None)</code></pre><p>创建名为path的目录(只创建最后一层的目录),如果目录已经存在，则抛出异常FileExistsError。<br>mode就是所创建目录对应的文件及文件夹的读写权限; *，dir_fd=None为命名关键字参数。  </p><pre><code>os.makedirs(name, mode=0o777, exist_ok=False)</code></pre><p>递归创建目录，即路径中哪一层不存在，则自动创建。<br>name为所要创建的目录名称；参数mode传递给mkdir()；如果exist_ok是False（默认），当目标目录（即要创建的目录）已经存在，会抛出一个OSError。  </p><h3 id="在列表，元组，字典变量前加"><a href="#在列表，元组，字典变量前加" class="headerlink" title="在列表，元组，字典变量前加 *"></a>在列表，元组，字典变量前加 *</h3><p>在列表前加 *，会将列表拆分成一个一个的独立元素，不光是列表、元组、字典，由numpy生成的向量也可以拆分。即不加 *，则将整个列表当做一个元素使用；加了 *，则将列表里的每一个元素都拆分出来使用。  </p><h3 id="函数中-args-和-kwargs"><a href="#函数中-args-和-kwargs" class="headerlink" title="函数中 *args 和 **kwargs"></a>函数中 *args 和 **kwargs</h3><pre><code>*args：接收若干个位置参数，转换成元组tuple形式  **kwargs：接收若干个关键字参数，转换成字典dict形式</code></pre>]]></content>
     
@@ -35,17 +35,17 @@
     </summary>
     
     
-      <category term="Python" scheme="http://www.wenchang1997.cn/categories/Python/"/>
+      <category term="Python" scheme="https://www.wenchang1997.cn/categories/Python/"/>
     
     
-      <category term="Python" scheme="http://www.wenchang1997.cn/tags/Python/"/>
+      <category term="Python" scheme="https://www.wenchang1997.cn/tags/Python/"/>
     
   </entry>
   
   <entry>
     <title>Markdown 语法</title>
-    <link href="http://www.wenchang1997.cn/2020/03/20/markdown/"/>
-    <id>http://www.wenchang1997.cn/2020/03/20/markdown/</id>
+    <link href="https://www.wenchang1997.cn/2020/03/20/markdown/"/>
+    <id>https://www.wenchang1997.cn/2020/03/20/markdown/</id>
     <published>2020-03-20T12:56:07.000Z</published>
     <updated>2020-03-20T12:58:20.000Z</updated>
     
@@ -54,19 +54,19 @@
     </summary>
     
     
-      <category term="Markdown" scheme="http://www.wenchang1997.cn/categories/Markdown/"/>
+      <category term="Markdown" scheme="https://www.wenchang1997.cn/categories/Markdown/"/>
     
     
-      <category term="Markdown" scheme="http://www.wenchang1997.cn/tags/Markdown/"/>
+      <category term="Markdown" scheme="https://www.wenchang1997.cn/tags/Markdown/"/>
     
   </entry>
   
   <entry>
     <title>关于Pytorch的零碎知识</title>
-    <link href="http://www.wenchang1997.cn/2020/03/20/pytorch-little-knowledge/"/>
-    <id>http://www.wenchang1997.cn/2020/03/20/pytorch-little-knowledge/</id>
+    <link href="https://www.wenchang1997.cn/2020/03/20/pytorch-little-knowledge/"/>
+    <id>https://www.wenchang1997.cn/2020/03/20/pytorch-little-knowledge/</id>
     <published>2020-03-20T09:59:03.000Z</published>
-    <updated>2020-03-20T12:54:31.000Z</updated>
+    <updated>2020-03-23T03:33:29.000Z</updated>
     
     <content type="html"><![CDATA[<h3 id="torch-manual-seed"><a href="#torch-manual-seed" class="headerlink" title="torch.manual_seed()"></a>torch.manual_seed()</h3><p>在神经网络中，参数默认是进行随机初始化的。不同的初始化参数往往会导致不同的结果，当得到比较好的结果时我们通常希望这个结果是可以复现的，在pytorch中，通过设置随机数种子也可以达到这么目的。常用的方法有：</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">SEED = <span class="number">0</span></span><br><span class="line">np.random.seed(SEED) <span class="comment"># 涉及数据随即处理时，需要加入这句</span></span><br><span class="line">torch.manual_seed(SEED)</span><br><span class="line">torch.cuda.manual_seed(SEED) <span class="comment"># 使用GPU时</span></span><br></pre></td></tr></table></figure>]]></content>
     
@@ -80,19 +80,19 @@
     </summary>
     
     
-      <category term="Pytorch" scheme="http://www.wenchang1997.cn/categories/Pytorch/"/>
+      <category term="Pytorch" scheme="https://www.wenchang1997.cn/categories/Pytorch/"/>
     
     
-      <category term="Pytorch" scheme="http://www.wenchang1997.cn/tags/Pytorch/"/>
+      <category term="Pytorch" scheme="https://www.wenchang1997.cn/tags/Pytorch/"/>
     
-      <category term="Python" scheme="http://www.wenchang1997.cn/tags/Python/"/>
+      <category term="Python" scheme="https://www.wenchang1997.cn/tags/Python/"/>
     
   </entry>
   
   <entry>
     <title>Git 常用命令</title>
-    <link href="http://www.wenchang1997.cn/2020/03/20/git-skills/"/>
-    <id>http://www.wenchang1997.cn/2020/03/20/git-skills/</id>
+    <link href="https://www.wenchang1997.cn/2020/03/20/git-skills/"/>
+    <id>https://www.wenchang1997.cn/2020/03/20/git-skills/</id>
     <published>2020-03-20T05:01:58.000Z</published>
     <updated>2020-03-20T12:34:15.000Z</updated>
     
@@ -101,17 +101,17 @@
     </summary>
     
     
-      <category term="GitHub" scheme="http://www.wenchang1997.cn/categories/GitHub/"/>
+      <category term="GitHub" scheme="https://www.wenchang1997.cn/categories/GitHub/"/>
     
     
-      <category term="Git" scheme="http://www.wenchang1997.cn/tags/Git/"/>
+      <category term="Git" scheme="https://www.wenchang1997.cn/tags/Git/"/>
     
   </entry>
   
   <entry>
     <title>hexo+github搭建博客</title>
-    <link href="http://www.wenchang1997.cn/2020/03/19/hexo-github/"/>
-    <id>http://www.wenchang1997.cn/2020/03/19/hexo-github/</id>
+    <link href="https://www.wenchang1997.cn/2020/03/19/hexo-github/"/>
+    <id>https://www.wenchang1997.cn/2020/03/19/hexo-github/</id>
     <published>2020-03-19T10:51:04.000Z</published>
     <updated>2020-03-20T12:36:21.000Z</updated>
     
@@ -128,12 +128,12 @@
     </summary>
     
     
-      <category term="Web" scheme="http://www.wenchang1997.cn/categories/Web/"/>
+      <category term="Web" scheme="https://www.wenchang1997.cn/categories/Web/"/>
     
     
-      <category term="Hexo" scheme="http://www.wenchang1997.cn/tags/Hexo/"/>
+      <category term="Hexo" scheme="https://www.wenchang1997.cn/tags/Hexo/"/>
     
-      <category term="GitHub" scheme="http://www.wenchang1997.cn/tags/GitHub/"/>
+      <category term="GitHub" scheme="https://www.wenchang1997.cn/tags/GitHub/"/>
     
   </entry>
   
